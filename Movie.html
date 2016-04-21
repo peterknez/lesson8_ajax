@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Peter Knez
+Date: 4/20/16
 Filename:   Movie.html
 - ->
 <head>
@@ -52,6 +52,10 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
 
     </div>
 </div> 
@@ -70,6 +74,7 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
